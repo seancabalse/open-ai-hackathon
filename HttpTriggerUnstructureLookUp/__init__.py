@@ -1,4 +1,5 @@
 import logging
+import json
 
 import azure.functions as func
 from sqlalchemy.engine import Engine, create_engine
@@ -94,8 +95,12 @@ def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
         
         logging.info(f"Model response: {model_response.content}")
         
+        json_result = json.dumps({
+            'text': model_response.content
+        })
+        
         return func.HttpResponse(
-             model_response.content,
+             json_result,
              status_code=200
         )
         

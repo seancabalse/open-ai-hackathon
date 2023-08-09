@@ -1,4 +1,5 @@
 import logging
+import json
 
 import azure.functions as func
 from langchain.embeddings.openai import OpenAIEmbeddings
@@ -76,10 +77,20 @@ def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
         result = qa.run(f"{prompt}")
         logging.info(f"Result: {result}")
         
+        
+        # return func.HttpResponse(
+        #      result,
+        #      status_code=200
+        # )
+        json_result = json.dumps({
+            'text': result
+        })
+        
         return func.HttpResponse(
-             result,
+             json_result,
              status_code=200
         )
+        
         
         
     else:
