@@ -1,0 +1,32 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#65d674",
+    "activityBar.background": "#65d674",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#7768d7",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#15202b99",
+    "editorGroup.border": "#65d674",
+    "sash.hoverBorder": "#65d674",
+    "statusBar.background": "#3dcb50",
+    "statusBar.debuggingBackground": "#cb3db8",
+    "statusBar.debuggingForeground": "#e7e7e7",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#2da83d",
+    "statusBarItem.remoteBackground": "#3dcb50",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#3dcb50",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#3dcb5099",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "peacock.color": "#6eb312",
+  "azureFunctions.deploySubpath": ".",
+  "azureFunctions.scmDoBuildDuringDeployment": true,
+  "azureFunctions.pythonVenv": ".venv",
+  "azureFunctions.projectLanguage": "Python",
+  "azureFunctions.projectRuntime": "~4",
+  "debug.internalConsoleOptions": "neverOpen",
+  "peacock.remoteColor": "#3dcb50"
+}
