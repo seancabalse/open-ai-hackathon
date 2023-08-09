@@ -8,3 +8,8 @@ pymysql
 langchain
 mysql-connector-python
 openai
+azure-search-documents==11.4.0b6
+azure-core 
+azure-identity
+azure-common
+tiktoken
